@@ -25,7 +25,8 @@ Claire's class acts as a reader of the state modified by Leon. The game loops ev
 
 ---
 
-## 📈 Future Improvements (What's Next)
-As a prototype, this version serves as a foundation but leaves room for architectural refactoring:
-- **Unify Collection Methods:** Generalize the specific item collection methods (`collect_magnum`, `collect_flamethrower`) into a single dynamic method to support scaling.
-- **Eliminate Remaining Global States:** Move the initial configuration dictionaries entirely inside the objects to allow handling multiple distinct rooms/zones simultaneously.
+## 📈 Future Improvements (Achieved in Version 2.0)
+This version established the core state-sharing logic but left several rigid architectural bottlenecks. The next iteration implements:
+- **Unified Inventory & Collection Logic:** Replacing hardcoded weapon methods (`collect_magnum`, `collect_flamethrower`) with a single, generalized function using data structures (`set`) to eliminate redundancy and prevent item duplication.
+- **Inheritance & Class Hierarchy:** Introducing a parent `Player` class to encapsulate shared mechanics (like inventory management), allowing `Leon` and `Claire` to specialize through strict business rule constraints.
+- **Expanded Environment State:** Incorporating a new interactive trigger (`generator_power_on`) to create branching tactical outcomes and danger zones for characters down the line.
