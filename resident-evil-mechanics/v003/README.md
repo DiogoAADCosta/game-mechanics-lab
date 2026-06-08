@@ -28,7 +28,8 @@ To ensure structural integrity during healing actions, a logical boundary clamp 
 
 ---
 
-## 📈 Future Improvements (What's Next in Version 4.0)
-Version 3.0 successfully establishes math-based attributes, but presents design limitations for large-scale operations:
-- **Objectification of Items:** Transition from handling supplies as raw string keys to generating dedicated, self-contained Item classes with polymorphic behaviors.
-- **Dynamic Terminal UI Layouts:** Refactor the messy linear simulation printouts into a clean, structured visual state interface that renders current conditions dynamically on screen.
+## 📈 Future Improvements (Achieved in Version 4.0)
+Version 3.0 successfully established math-based attributes but operated on a flat, automated sequence. The next iteration implements:
+- **Interactive Game Loop & Turn Systems:** Replacing automatic execution with a responsive input-driven loop, transforming the engine into a playable CLI turn-based game.
+- **Dynamic Terminal UI Rendering:** Integrating operating system subprocesses (os.system) to wipe the console cache at the start of each turn, creating a clean, modern frame-by-frame presentation.
+- **State-Driven Spatial Elements:** Laying down the infrastructure for tactical space constraints by managing real-time distances between enemies and players.
