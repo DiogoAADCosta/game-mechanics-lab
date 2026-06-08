@@ -27,7 +27,8 @@ Resource collection now requires a secure hand-shake between the actor and the e
 
 ---
 
-## 📈 Future Improvements (What's Next in Version 3.0)
-While Version 2.0 drastically cleaned up item handling, it operates on structural assumptions:
-- **Introduction of Dynamic Damage Systems:** Move from textual failure states (like falling into a pit) to active numeric health processing, damage scaling, and healing items.
-- **Advanced State Management:** Transition from a single, isolated room mock-up into a complex dataset ready to handle multiple, independent rooms or items simultaneously.
+## 📈 Future Improvements (Achieved in Version 3.0)
+While Version 2.0 drastically cleaned up item handling, it operated on basic textual outcomes. The next iteration implements:
+- **Dynamic Vitality & Damage Systems:** Moving away from binary triggers to an active numerical health tracker (`health`) driven by dynamic damage calculations and character-specific defense multipliers.
+- **Support Items & Consumable Support:** Introducing a dedicated scene item pool (`scene_items`) capable of handling stacked supplies like healing herbs, integrated with inventory removal and health-cap safety clamps.
+- **Introduction of AI Archetypes:** Establishing the initial foundation for enemy interaction with the creation of the `Zombie` class, capable of triggering direct damage methods against players.
