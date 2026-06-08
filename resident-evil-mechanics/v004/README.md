@@ -30,7 +30,8 @@ The architecture begins exploring tactical geography with the integration of an 
 
 ---
 
-## 📈 Future Improvements (What's Next in Version 5.0)
-While Version 4.0 successfully brings interactivity, the backend systems require structural scalability:
-- **Flesh Out Component Actions:** Complete the pass-through stubs (Options 2, 3, 4, and 5) to integrate active zombie combat, ammo consumption, and dynamic item usage into the live Game Loop.
-- **Turn-State Progression Logic:** Introduce structural consequences where taking an action causes active scene reactions, such as making enemies move closer or counter-attack automatically at the end of a round.
+## 📈 Future Improvements (Achieved in Version 5.0)
+Version 4.0 successfully established the dynamic visual frame layouts but left room interaction systems as empty stubs. The next iteration implements:
+- **Stackable Inventory & Resource Management:** Moving away from primitive array listings to dictionary-mapped key-value stores, allowing both players and rooms to manage real-time item quantities.
+- **Dynamic Supply Extraction Pipelines:** Activating localized sub-menus capable of querying scenario database states, modifying remaining quantities, and safely executing database drops when stock reaches absolute zero.
+- **Polymorphic Action Hooks:** Integrating deep transactional logic within menu operations to handle active dynamic item stacking and character state modifications.
