@@ -8,6 +8,17 @@ The primary objective of this laboratory is not just to make games that work, bu
 
 ---
 
+## 🧠 Development Philosophy & The "Black Box" Approach
+
+A core constraint of this laboratory is **pure empirical reverse engineering**:
+
+* **Zero Code References:** Every single mechanic, algorithm, and data structure in this repository was conceived and coded from scratch, without looking at external codebases, game engine templates, or tutorials.
+* **Player-Driven Logic:** The technical specifications were derived exclusively from analyzing game systems as a player. The logic is the result of translating raw gameplay experiences directly into software architecture. 
+
+This "black box" approach ensures that the focus remains entirely on raw problem-solving, structural design, and authentic mathematical modeling.
+
+---
+
 ## 📂 Active Laboratories
 
 This repository is organized into highly specialized directories, each focusing on a distinct era, genre, or core architectural pattern of game loop engineering:
